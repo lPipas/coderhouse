@@ -1,0 +1,38 @@
+.flex-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contact {
+    background-color: rgb(26, 32, 68);
+    padding: 20px;
+    color: rgb(197, 207, 239);
+    border-radius: 15px;
+    border: 4px dashed rgb(183, 192, 218);
+
+    span {
+        text-decoration: underline;
+    }
+}
+
+.input-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    text-align: center;
+    background-color: rgb(176, 176, 195);
+    color: rgb(74, 74, 107);
+    width: 300px;
+    border: 1px solid rgb(82, 106, 121);
+    margin-top: 10px;
+}
+
+.title-contact {
+    text-decoration: underline;
+}

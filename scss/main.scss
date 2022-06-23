@@ -1,0 +1,115 @@
+@import 'secciones/index';
+@import 'secciones/productos';
+@import 'secciones/cuenta';
+@import 'secciones/pedidos';
+@import 'secciones/contacto';
+
+$color-fondo: rgba(117, 117, 137, 0.724);
+$color-main-letras: rgb(6, 7, 49);
+$color-footer: rgb(27, 31, 58);
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: $color-fondo;
+    color: $color-main-letras;
+}
+
+a:hover {
+    color: white !important;
+}
+
+.grilla {
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+}
+
+.navbar {
+    background-color: rgb(33, 38, 67) !important;
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.navbar-toggler {
+    background-color: rgb(117, 117, 137);
+}
+
+.navbar-brand {
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.nav-item {
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+
+.nav-link {
+    background-color: rgb(117, 117, 137);
+    color: white !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px !important;
+    text-align: center;
+
+    &:hover {
+        background-color: rgba(127, 127, 153, 0.607);
+    }
+}
+
+.dropdown-menu {
+    background-color: rgb(127, 127, 153);
+
+    a {
+        color: white;
+
+        &:hover {
+            background-color: rgb(108, 108, 141) !important;
+            color: white !important;
+        }
+    }
+}
+
+.footer {
+    background-color: $color-footer;
+}
+
+.list-footer {
+    display: flex;
+    margin-top: 20px;
+    list-style-type: none;
+    justify-content: space-around;
+
+    a {
+        background-color: rgb(117, 117, 137);
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    &:hover {
+        background-color: rgba(127, 127, 153, 0.607);
+    }
+}

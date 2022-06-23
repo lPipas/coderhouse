@@ -1,0 +1,85 @@
+h4{
+    text-align: center;
+}
+
+img{
+    animation: giro 2.5s;
+}
+
+.title-en-oferta,
+.title-mas-vendido {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.grid-en-oferta {
+    display: grid;
+    grid-template-areas:
+    "title-en-oferta title-en-oferta"
+    "en-oferta-1 en-oferta-2";
+}
+
+.title-en-oferta {
+    grid-area: title-en-oferta;
+}
+
+.en-oferta-1 {
+    grid-area: en-oferta-1;
+    display:flex;
+    justify-content: center;
+}
+
+.en-oferta-2 {
+    grid-area: en-oferta-2;
+    display:flex;
+    justify-content: center;
+}
+
+.grid-mas-vendido {
+    display: grid;
+    grid-template-areas:
+    "title-mas-vendido title-mas-vendido"
+    "mas-vendido-1 mas-vendido-2";
+}
+
+.title-mas-vendido {
+    grid-area: title-mas-vendido;
+}
+
+.mas-vendido-1 {
+    grid-area: mas-vendido-1;
+    display:flex;
+    justify-content: center;
+}
+
+.mas-vendido-2 {
+    grid-area: mas-vendido-2;
+    display:flex;
+    justify-content: center;
+}
+
+@keyframes giro {
+    0% {
+        transform: rotate(0deg) scale(0.3);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-en-oferta {
+        grid-template-areas:
+        "title-en-oferta"
+        "en-oferta-1"
+        "en-oferta-2";
+    }
+    
+    .grid-mas-vendido {
+        grid-template-areas:
+        "title-mas-vendido"
+        "mas-vendido-1"
+        "mas-vendido-2";
+    }
+}

@@ -1,0 +1,42 @@
+.nav-pedidos {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    li {
+        background-color: rgb(117, 117, 137);
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.table-pedidos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    background-color: rgb(26, 32, 68);
+    padding: 20px;
+    border-radius: 15px;
+    border: 4px solid rgb(183, 192, 218);
+    color: rgb(197, 207, 239);
+}
+
+td,
+th {
+    padding: 10px;
+    border: 2px solid rgb(106, 106, 141);
+}
+
+th {
+    text-decoration: underline;
+}
