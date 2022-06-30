@@ -264,5 +264,5 @@ a:hover {
     border-radius: 4px;
     text-align: center;
     padding: 10px; }
-  .list-footer:hover {
-    background-color: rgba(127, 127, 153, 0.607); }
+    .list-footer a:hover {
+      background-color: rgba(127, 127, 153, 0.607); }
